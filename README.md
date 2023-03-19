@@ -51,6 +51,22 @@ SELECT count(tb_genre.genre_name),tb_genre.genre_name FROM movies.tb_genre INNER
 
 ## Exercici 4
 Vaig a la taula tb_movie_person i faig la INNER JOIN seguent:
+SELECT COUNT(tb_movie_person.role_id), tb_movie_person.movie_id, tb_person.person_name 
+FROM movies.tb_person INNER JOIN movies.tb_movie_person ON tb_person.person_id=tb_movie_person.person_id 
+GROUP BY tb_movie_person.person_id, tb_movie_person.movie_id ORDER BY COUNT(tb_movie_person.role_id)DESC;
+
+ **Visió de la query:**
+![Exercici 4 1era part](https://user-images.githubusercontent.com/29401511/226210447-4ed85b39-8d6d-4868-a5f2-c2d87b7616df.jpg)
+
+Per veure els que han tingut mes d'un rol en una pelicula hi afegirem la clausula HAVING :
+SELECT COUNT(tb_movie_person.role_id), tb_movie_person.movie_id, tb_person.person_name 
+FROM movies.tb_person INNER JOIN movies.tb_movie_person ON tb_person.person_id=tb_movie_person.person_id 
+GROUP BY tb_movie_person.person_id, tb_movie_person.movie_id 
+**HAVING COUNT(tb_movie_person.role_id) >1** ORDER BY COUNT(tb_movie_person.role_id) DESC;
+
+**Visió de la query:**
+
+
 
 
 
