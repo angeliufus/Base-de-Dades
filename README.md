@@ -66,6 +66,8 @@ GROUP BY tb_movie_person.person_id, tb_movie_person.movie_id
 
 **Visió de la query:**
 
+![exercici 4 2ona part](https://user-images.githubusercontent.com/29401511/226211329-d1db4df5-d7ba-41cf-a88c-05c0ff113cab.jpeg)
+
 
 
 
