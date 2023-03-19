@@ -42,7 +42,7 @@ Vaig a la taula tb_person i poso la query SELECT person_name, person_country, pe
 
 ## Exercici 3
 
-Vaig a la taula tb_movie i tb_genre i faig la INNER JOIN seguent:
+Vaig a la taula tb_genre i faig la INNER JOIN seguent:
 SELECT count(tb_genre.genre_name),tb_genre.genre_name FROM movies.tb_genre INNER JOIN movies.tb_movie ON tb_genre.genre_id=tb_movie.movie_genre_id
  GROUP BY movie_genre_id ORDER BY COUNT(movie_genre_id) DESC;
  **Visió de la query:**
@@ -50,5 +50,7 @@ SELECT count(tb_genre.genre_name),tb_genre.genre_name FROM movies.tb_genre INNER
 ![exercici 3](https://user-images.githubusercontent.com/29401511/226205387-5b5035a6-2f27-4310-a367-a90c16287418.jpg)
 
 ## Exercici 4
+Vaig a la taula tb_movie_person i faig la INNER JOIN seguent:
+
 
 
