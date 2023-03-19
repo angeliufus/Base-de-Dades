@@ -20,9 +20,13 @@ De nou els camps de create_date i update_date son format data i poden ser nuls, 
 *Te 9 columnes o atributs: La clau **primària** es **person_id**. Inclou el nom de les persones person_name que no pot ser NUll, el país d'on son person_country que si pot ser NULL , la data de naixement person_dob que s'ha d'entrar obligatoriament (Not Null) i la data de mort person_dod que en aquest cas si pot ser NULL ja que pot estar encara viu. 
 També te un atribut que es **person_parent_id** que es una **clau forànea**, és un codi numeric que el relaciona amb la clau primària d'aquesta mateixa taula, ja que hi ha persones que son fills de altres persones de la industria del cine. En aquest cas, pot ser NULL ja que hi haurà persones que no tenen pares a la industria.
 De nou els camps de create_date i update_date son format data i poden ser nuls, o sigui no tenir cap valor.I de nou el created_by_user te un valor pr defecte (OS_SGAD)
-5. **tb_role*.
+5. **tb_role**
 * Te 5 columnes o atributs: La clau **primària** es **role_id**. Simplement dona un codi numéric a tots els rols que pots tenir en una película
 De nou els camps de create_date i update_date son format data i poden ser nuls, o sigui no tenir cap valor.I de nou el created_by_user te un valor pr defecte (OS_SGAD)
 Envio imatges a continuació del mysql workbench on he obtingut tota aquesta informació:
-![alt text](Visió de les taules.jpg)
+
+![Visió de les taules](https://user-images.githubusercontent.com/29401511/226172135-78c7d5f8-d8d5-4222-be6a-92b984fa6da8.jpg)
+![Visió del tipus d'atributs](https://user-images.githubusercontent.com/29401511/226172187-46ec941d-a6f9-45b7-8af0-14e6f6f327a9.jpg)
+![Visió dels arbres](https://user-images.githubusercontent.com/29401511/226172197-56c26c48-577c-44e2-9899-5ee30de37a43.jpg)
+
 
