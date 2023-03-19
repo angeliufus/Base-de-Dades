@@ -33,4 +33,13 @@ Envio imatges a continuació del mysql workbench on he obtingut tota aquesta inf
 **Visió dels arbres**
 ![Visió dels arbres](https://user-images.githubusercontent.com/29401511/226172197-56c26c48-577c-44e2-9899-5ee30de37a43.jpg)
 
+## Exercici 2
+
+Li poso la query a MYSQL SELECT person_name, person_country, person_dob FROM movies.tb_person WHERE person_dod IS NULL ORDER BY person_dob ASC;
+
+**Visió de la query:**
+![Query exercici2](https://user-images.githubusercontent.com/29401511/226173613-9e0bdb90-a064-4350-a5fc-a9c2f371da22.jpg)
+
+
+
 
