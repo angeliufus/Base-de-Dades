@@ -35,11 +35,20 @@ Envio imatges a continuació del mysql workbench on he obtingut tota aquesta inf
 
 ## Exercici 2
 
-Li poso la query a MYSQL SELECT person_name, person_country, person_dob FROM movies.tb_person WHERE person_dod IS NULL ORDER BY person_dob ASC;
-
+Vaig a la taula tb_person i poso la query SELECT person_name, person_country, person_dob FROM movies.tb_person WHERE person_dod IS NULL ORDER BY person_dob ASC;
+ I obtenim el seguent resultat:
 **Visió de la query:**
 ![Query exercici2](https://user-images.githubusercontent.com/29401511/226173613-9e0bdb90-a064-4350-a5fc-a9c2f371da22.jpg)
 
+## Exercici 3
 
+Vaig a la taula tb_movie i tb_genre i faig la INNER JOIN seguent:
+SELECT count(tb_genre.genre_name),tb_genre.genre_name FROM movies.tb_genre INNER JOIN movies.tb_movie ON tb_genre.genre_id=tb_movie.movie_genre_id
+ GROUP BY movie_genre_id ORDER BY COUNT(movie_genre_id) DESC;
+ **Visió de la query:**
+ 
+![exercici 3](https://user-images.githubusercontent.com/29401511/226205387-5b5035a6-2f27-4310-a367-a90c16287418.jpg)
+
+## Exercici 4
 
 
