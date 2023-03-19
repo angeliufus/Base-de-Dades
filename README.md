@@ -23,7 +23,9 @@ De nou els camps de create_date i update_date son format data i poden ser nuls, 
 5. **tb_role**
 * Te 5 columnes o atributs: La clau **primària** es **role_id**. Simplement dona un codi numéric a tots els rols que pots tenir en una película
 De nou els camps de create_date i update_date son format data i poden ser nuls, o sigui no tenir cap valor.I de nou el created_by_user te un valor pr defecte (OS_SGAD)
+
 Envio imatges a continuació del mysql workbench on he obtingut tota aquesta informació:
+
 **Visió de les taules:**
 ![Visió de les taules](https://user-images.githubusercontent.com/29401511/226172135-78c7d5f8-d8d5-4222-be6a-92b984fa6da8.jpg)
 **Visió del tipus d'atributs**
