@@ -81,11 +81,41 @@ INSERT INTO movies.tb_genre(genre_id, genre_name) VALUES (69,'Documental')
 
 ## Exercici 6
 
-Per esborrar una fila en aquest cas la query seria: 
+Per esborrar una fila en aquest cas la query he intentat a workbench: 
 
 DELETE FROM movies.tb_movie WHERE Movie_title='La Gran Familia Española';
-o també es podria anar a FORM Editor i clickar la Icona Delete current row from record set
-Per fer ambues ordres he hagut d'anar a SETTINGS -> SQL Editor i disable Safe mode
+Perè em donava error 1451 (foreign key constraint fails) 
+He hagut d'anar a terminal i fer el seguent:
+
+**mysql> SHOW GLOBAL VARIABLES LIKE 'FOREIGN_KEY_CHECKS';
++--------------------+-------+
+| Variable_name      | Value |
++--------------------+-------+
+| foreign_key_checks | ON    |
++--------------------+-------+
+1 row in set (0,05 sec)
+
+mysql> SET FOREIGN_KEY_CHECKS=0;
+Query OK, 0 rows affected (0,00 sec)
+
+mysql> DELETE FROM movies.tb_movie WHERE movie_title='La Gran Familia Española'; 
+Query OK, 1 row affected (0,04 sec)
+
+mysql> SET FOREIGN_KEY_CHECKS=1;
+Query OK, 0 rows affected (0,00 sec)**
+
+També es podria anar dins de workbench a FORM Editor i clickar la Icona Delete current row from record set i no donava problemes 
+
+## Exercici 7
+
+Aqui farem servir el command UPDATE i canviarem el movie_genre_id de 8 Romance a 3 Comedy (tot i que molt de comèdia no és... :-P)
+
+UPDATE movies.tb_movie
+SET movie_genre_id = 3
+WHERE movie_title = 'Ocho Apellidos Catalanes'
+
+
+![exercici 7](https://user-images.githubusercontent.com/29401511/226301043-4b112854-4989-4b4e-8237-7b0353c55dfb.jpg)
 
 
 
