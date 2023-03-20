@@ -68,6 +68,17 @@ GROUP BY tb_movie_person.person_id, tb_movie_person.movie_id
 
 ![exercici 4 2ona part](https://user-images.githubusercontent.com/29401511/226211329-d1db4df5-d7ba-41cf-a88c-05c0ff113cab.jpeg)
 
+## Exercici 5
+
+Per inserir data només a columnes específiques només cal fer en aquest cas: 
+INSERT INTO movies.tb_genre(genre_id, genre_name) VALUES (69,'Documental')
+
+**Visió de la query i del resultat a la taula:**
+
+
+![exercici 5 query](https://user-images.githubusercontent.com/29401511/226284147-344aba7b-758a-443d-af34-8a6b24e58a49.jpg)
+![Resultat taula exercici 5](https://user-images.githubusercontent.com/29401511/226284168-2affde00-4aa4-492f-b42e-56ceeaf62a3c.jpg)
+
 
 
 
